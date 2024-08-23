@@ -1,22 +1,9 @@
 body {
     margin: auto 0;
     font-size:2em;
-    color:#35241C;
+    color:#1F2733;
 }
 
-.zone {
-    cursor:pointer;
-    border-radius:4px;
-    border:1px solid #bbb;
-    transition: all 0.3s linear;
-}
-
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
 
 .main-nav {
     display: flex;
@@ -41,7 +28,7 @@ li {
 }
 
 a {
-    color: #35241C;
+    color: #1F2733;
     text-decoration: none;
 }
 
@@ -92,6 +79,7 @@ h5 {
     align-self: flex-end;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .button-caption {
@@ -101,20 +89,28 @@ h5 {
 
 .button-box {
     padding: 2.8rem 2.8rem;
-    border: 2px solid transparent;
-    border-image: conic-gradient(  rgba(255, 255, 255, 0) 89deg, rgba(53, 36, 28, 1.0) 90deg, rgba(53, 36, 28, 1.0) 157.5deg, rgba(255, 255, 255, 0) 158deg, rgba(255, 255, 255, 0) 269deg, rgba(53, 36, 28, 1.0) 270deg, rgba(53, 36, 28, 1.0) 337.5deg, rgba(255, 255, 255, 0) 338deg);
+    border: 2.8px solid transparent;
+    border-image: conic-gradient(  rgba(255, 255, 255, 0) 89deg, rgba(31, 39, 51, 1.0) 90deg, rgba(31, 39, 51, 1.0) 157.5deg, rgba(255, 255, 255, 0) 158deg, rgba(255, 255, 255, 0) 269deg, rgba(31, 39, 51, 1.0) 270deg, rgba(31, 39, 51, 1.0) 337.5deg, rgba(255, 255, 255, 0) 338deg);
     border-image-slice: 1;
-    font-size: 2.4vw;
+    font-size: 2.8vw;
     text-align: center;
     line-height: 0.1em;
     font-weight: 900;
 }
 
+.button-box:hover {
+    padding: 2.8rem 2.8rem;
+    border: 2.8px solid #1F2733;
+    background-color: #1F2733;
+    color: #fff;
+}
+
+
 .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 4vh 4vw 4vh 4vw;
+    padding: 4vh 4vw 2vh 4vw;
     height: fit-content;
 }
 
@@ -197,7 +193,7 @@ h5 {
 .form-container {
     min-height: 60vh;  
     max-height: fit-content;
-    background-color: #35241C;
+    background-color: #1F2733;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -230,4 +226,18 @@ h5 {
     text-align: left;
     font-size: 1.6vw;
     padding-left: 0;
+}
+
+
+/********* JS *******/
+
+.removeImages {
+    transition: all 0.1s ease-in-out;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.slideIt {
+    transition: all 0.8s;
+    transform: scaleY(1);
 }
