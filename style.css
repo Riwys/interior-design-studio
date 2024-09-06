@@ -36,7 +36,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 88vh;
+    height: 90vh;
 }
 
 footer {
@@ -98,13 +98,18 @@ h5 {
     font-weight: 900;
 }
 
-.button-box:hover {
-    padding: 2.8rem 2.8rem;
-    border: 2.8px solid #1F2733;
-    background-color: #1F2733;
-    color: #fff;
+@media (hover: hover) {
+    .button-box:hover {
+        padding: 2.8rem 2.8rem;
+        border: 2.8px solid #1F2733;
+        background-color: #1F2733;
+        color: #fff;
+    }
 }
 
+html.my-true-hover button:hover {
+    background-color: blue;
+}
 
 .wrapper {
     display: flex;

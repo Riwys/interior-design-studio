@@ -70,3 +70,8 @@ button.addEventListener("click", function() {
 	form.scrollIntoView();
 });
 
+/******** detects support for hover and toggle hover class accordingly  *************************/
+document.on('mq4hsChange', function (e) {
+    document.documentElement.toggleClass('my-true-hover', e.trueHover);
+});
+
