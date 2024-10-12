@@ -65,13 +65,14 @@ h3 {
     height: fit-content;
     line-height: 0.2em;
     margin: 2vh 0;
+    font-size: calc(2.0vw + 2.0vh);
 }
 
 h5 {
     font-size: calc(1.0vw + 1.0vh);
 }
 
-.button-space {
+.btn {
     margin-top: auto;
     margin-bottom: 4vh;
     margin-right: 4vw;
@@ -82,12 +83,12 @@ h5 {
     cursor: pointer;
 }
 
-.button-caption {
+.btn_caption {
     margin: 0;
     margin-bottom: 2vh;
 }
 
-.button-box {
+.btn_box {
     padding: 2.8rem 2.8rem;
     border: 2.8px solid transparent;
     border-image: conic-gradient(  rgba(255, 255, 255, 0) 89deg, rgba(31, 39, 51, 1.0) 90deg, rgba(31, 39, 51, 1.0) 157.5deg, rgba(255, 255, 255, 0) 158deg, rgba(255, 255, 255, 0) 269deg, rgba(31, 39, 51, 1.0) 270deg, rgba(31, 39, 51, 1.0) 337.5deg, rgba(255, 255, 255, 0) 338deg);
@@ -99,7 +100,7 @@ h5 {
 }
 
 @media (hover: hover) {
-    .button-box:hover {
+    .btn_box:hover {
         padding: 2.8rem 2.8rem;
         border: 2.8px solid #1F2733;
         background-color: #1F2733;
